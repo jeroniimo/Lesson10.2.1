@@ -1,37 +1,41 @@
 package org.example;
-public class Circle implements Shape {
-    private double radius; // Радиус круга
-    private String fillColor; // Цвет заливки
-    private String borderColor; // Цвет границы
 
-    // Конструктор класса, инициализирует радиус, цвет заливки и цвет границы
-    public Circle(double radius, String fillColor, String borderColor) {
-        this.radius = radius; // Присваиваем радиус
-        this.fillColor = fillColor; // Присваиваем цвет заливки
-        this.borderColor = borderColor; // Присваиваем цвет границы
+public class Circle implements GeometricShape {
+    private double radius;
+    private String fillColor;
+    private String borderColor;
+
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
-    // Реализация метода для расчета площади круга
-    @Override
-    public double getArea() {
-        return Math.PI * radius * radius; // Формула площади: πr²
-    }
-
-    // Реализация метода для получения цвета заливки
-    @Override
-    public String getFillColor() {
-        return fillColor; // Возвращаем цвет заливки
-    }
-
-    // Реализация метода для получения цвета границы
-    @Override
-    public String getBorderColor() {
-        return borderColor; // Возвращаем цвет границы
-    }
-
-    // Переопределение метода для расчета периметра (длина окружности)
     @Override
     public double getPerimeter() {
-        return 2 * Math.PI * radius; // Формула периметра: 2πr
+        return 2 * Math.PI * radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+
+    @Override
+    public void setFillColor(String color) {
+        this.fillColor = color;
+    }
+
+    @Override
+    public void setBorderColor(String color) {
+        this.borderColor = color;
+    }
+
+    @Override
+    public String getFillColor() {
+        return fillColor;
+    }
+
+    @Override
+    public String getBorderColor() {
+        return borderColor;
     }
 }
