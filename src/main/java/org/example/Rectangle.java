@@ -1,4 +1,4 @@
-// Класс Rectangle, реализующий интерфейс Shape
+package org.example;
 public class Rectangle implements Shape {
     private double width; // Ширина прямоугольника
     private double height; // Высота прямоугольника

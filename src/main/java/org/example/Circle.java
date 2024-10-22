@@ -1,4 +1,4 @@
-// Класс Circle, реализующий интерфейс Shape
+package org.example;
 public class Circle implements Shape {
     private double radius; // Радиус круга
     private String fillColor; // Цвет заливки

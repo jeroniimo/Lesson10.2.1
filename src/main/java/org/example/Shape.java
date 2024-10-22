@@ -1,4 +1,5 @@
-// Интерфейс Shape, который определяет методы для всех фигур
+package org.example;
+// Интерфейс Shape
 public interface Shape {
     // Метод для получения площади фигуры
     double getArea();

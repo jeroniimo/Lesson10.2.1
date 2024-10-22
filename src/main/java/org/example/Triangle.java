@@ -1,4 +1,4 @@
-// Класс Triangle, реализующий интерфейс Shape
+package org.example;
 public class Triangle implements Shape {
     private double sideA; // Сторона A
     private double sideB; // Сторона B

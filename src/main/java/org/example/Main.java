@@ -1,4 +1,4 @@
-// Основной класс, содержащий метод main для запуска программы
+package org.example;
 public class Main {
     public static void main(String[] args) {
         // Создаем экземпляры фигур с параметрами
